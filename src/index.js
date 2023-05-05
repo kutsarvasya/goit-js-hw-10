@@ -11,7 +11,6 @@ const DEBOUNCE_DELAY = 300;
 inputEl.addEventListener('input', debounce(eventHandler, DEBOUNCE_DELAY));
 
 function eventHandler(e) {
-  console.log(e.target.value);
   const countryName = e.target.value.trim();
   countryListEl.innerHTML = '';
   countryItemEl.innerHTML = '';
