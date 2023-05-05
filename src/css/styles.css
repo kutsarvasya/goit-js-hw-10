@@ -11,10 +11,30 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-
+ul{
+  margin: 0;
+  padding: 0;
+  margin-left: 40px;
+}
+li{
+  list-style: none;
+}
+input{
+  margin-left: 40px;
+}
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+
+.country-item{
+  display: flex;
+ align-items: center;
+  gap: 10px;
+}
+div.country-item{
+  margin-left: 40px;
 }
