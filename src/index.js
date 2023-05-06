@@ -29,6 +29,7 @@ function createMarcUp(countries) {
     Notiflix.Notify.info(
       'Too many matches found. Please enter a more specific name.'
     );
+      return
   }
 
   if (countries.length >= 2 && countries.length <= 10) {
@@ -40,7 +41,8 @@ function createMarcUp(countries) {
       </li>`;
       })
       .join('');
-    countryListEl.innerHTML = listCountries;
+      countryListEl.innerHTML = listCountries;
+      return
   }
 
   if (countries.length === 1) {
@@ -53,6 +55,7 @@ function createMarcUp(countries) {
         <li><b>Population: </b>${countries[0].population}</li>
         <li><b>Languages: </b>${Object.values(countries[0].languages)}</li>
       </ul>`;
-    countryItemEl.innerHTML = itemCountry;
+      countryItemEl.innerHTML = itemCountry;
+      return
   }
 }
